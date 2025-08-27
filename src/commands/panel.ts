@@ -1,7 +1,7 @@
 import type { CommandInteraction } from "dressed";
 
-export default async function panel(interaction: CommandInteraction) {
-  await interaction.reply({
+export default function panel(interaction: CommandInteraction) {
+  return interaction.reply({
     components: [{
       type: 1,
       components: [{
