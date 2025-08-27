@@ -1,6 +1,6 @@
 import type { CommandInteraction } from "dressed";
 
-export default function adventure(interaction: CommandInteraction) {
+export default function panel(interaction: CommandInteraction) {
   interaction.reply({
     components: [{
       type: 1,
