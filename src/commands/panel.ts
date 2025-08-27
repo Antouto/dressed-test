@@ -18,7 +18,7 @@ export default async function (interaction: CommandInteraction) {
   await interaction.deferReply({ ephemeral: true });
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
   const todos = (await res.json()) as { title: string; completed: boolean }[];
-  await interaction.editReply({
+  return await interaction.editReply({
     flags: 1 << 15,
     components: [
       Container(
