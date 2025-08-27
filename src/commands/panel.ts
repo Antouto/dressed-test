@@ -18,13 +18,13 @@ export default async function (interaction: CommandInteraction) {
   await interaction.deferReply({ ephemeral: true });
   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
   const todos = (await res.json()) as { title: string; completed: boolean }[];
-  return await interaction.editReply({
+  await interaction.editReply({
     flags: 1 << 15,
     components: [
       Container(
         TextDisplay("Todos"),
         ...todos
-          .slice(0, 32)
+          .slice(0, 5)
           .map((t) =>
             Section(
               [t.title],
