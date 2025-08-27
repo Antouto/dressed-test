@@ -1,7 +1,7 @@
 import { type MessageComponentInteraction } from "dressed";
 
 export default function test(interaction: MessageComponentInteraction) {
-  return interaction.showModal({
+  interaction.showModal({
     title: "test",
     custom_id: "test",
     components: [{
