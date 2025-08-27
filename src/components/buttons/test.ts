@@ -1,9 +1,4 @@
-import { ActionRow, Button, type MessageComponentInteraction } from "dressed";
-import { story } from "@/story.ts";
-
-function random(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import { type MessageComponentInteraction } from "dressed";
 
 export default function test(interaction: MessageComponentInteraction) {
   return interaction.showModal({
