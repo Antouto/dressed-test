@@ -1,5 +1,4 @@
-import type { CommandInteraction, MessageComponentInteraction } from "dressed";
-import avtButton from "@/components/buttons/avt-:choice-:vars";
+import type { CommandInteraction } from "dressed";
 
 export default function adventure(interaction: CommandInteraction) {
   interaction.reply({
