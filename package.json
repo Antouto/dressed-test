@@ -16,6 +16,6 @@
 		"wrangler": "^4.40.0"
 	},
 	"dependencies": {
-		"dressed": "^1.10.0-rc.1"
+		"dressed": "^1.10.0-canary.10"
 	}
 }
